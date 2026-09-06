@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+
+    <title>ShopCart - Checkout</title>
+
+    <link
+        rel="stylesheet"
+        href="css/style.css"
+    >
+
+</head>
+
+<body>
+
+<header class="header">
+
+    <div class="logo">
+
+        <a href="index.html">
+            Shop<span>Cart</span>
+        </a>
+
+    </div>
+
+</header>
+
+
+<section class="page-header">
+
+    <h1>Checkout</h1>
+
+</section>
+
+
+<main class="checkout-container">
+
+    <form
+        class="checkout-form"
+        onsubmit="placeOrder(event)"
+    >
+
+        <h2>Delivery Information</h2>
+
+        <div class="form-row">
+
+            <input
+                type="text"
+                placeholder="First Name"
+                required
+            >
+
+            <input
+                type="text"
+                placeholder="Last Name"
+                required
+            >
+
+        </div>
+
+        <input
+            type="text"
+            placeholder="Address"
+            required
+        >
+
+        <div class="form-row">
+
+            <input
+                type="text"
+                placeholder="City"
+                required
+            >
+
+            <input
+                type="text"
+                placeholder="PIN Code"
+                required
+            >
+
+        </div>
+
+        <input
+            type="tel"
+            placeholder="Phone Number"
+            required
+        >
+
+
+        <h2>Payment Method</h2>
+
+        <label class="payment-option">
+
+            <input
+                type="radio"
+                name="payment"
+                value="cod"
+                checked
+            >
+
+            Cash on Delivery
+
+        </label>
+
+        <label class="payment-option">
+
+            <input
+                type="radio"
+                name="payment"
+                value="upi"
+            >
+
+            UPI
+
+        </label>
+
+        <label class="payment-option">
+
+            <input
+                type="radio"
+                name="payment"
+                value="card"
+            >
+
+            Credit / Debit Card
+
+        </label>
+
+
+        <button
+            type="submit"
+            class="btn"
+        >
+            Place Order
+        </button>
+
+    </form>
+
+
+    <aside class="checkout-summary">
+
+        <h2>Your Order</h2>
+
+        <div id="checkoutItems"></div>
+
+        <hr>
+
+        <div class="summary-total">
+
+            <span>Total</span>
+
+            <strong id="checkoutTotal">
+                ₹0
+            </strong>
+
+        </div>
+
+    </aside>
+
+</main>
+
+
+<script src="js/products.js"></script>
+<script src="js/app.js"></script>
+
+</body>
+</html>

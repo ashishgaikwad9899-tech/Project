@@ -1,0 +1,235 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>ShopCart - Fashion Store</title>
+
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+
+  <body>
+    <header class="header">
+      <div class="logo">
+        <a href="index.html">Shop<span>Cart</span></a>
+      </div>
+
+      <nav class="navbar">
+        <a href="index.html">Home</a>
+        <a href="products.html?category=Men">Men</a>
+        <a href="products.html?category=Women">Women</a>
+        <a href="products.html?category=Kids">Kids</a>
+        <a href="products.html?category=New">New Arrivals</a>
+        <a href="products.html?category=Sale">Sale</a>
+      </nav>
+
+      <div class="header-actions">
+        <div class="search-box">
+          <input
+            type="text"
+            id="headerSearch"
+            placeholder="Search products..."
+          />
+          <button onclick="searchProducts()">🔍</button>
+        </div>
+
+        <a href="login.html" class="header-icon">👤</a>
+
+        <a href="wishlist.html" class="header-icon">
+          ❤️
+          <span id="wishlistCount" class="count">0</span>
+        </a>
+
+        <a href="cart.html" class="header-icon">
+          🛒
+          <span id="cartCount" class="count">0</span>
+        </a>
+      </div>
+
+      <button class="menu-btn" onclick="toggleMenu()">☰</button>
+    </header>
+
+    <!-- HERO -->
+
+    <section class="hero">
+      <div class="hero-content">
+        <p class="hero-small">NEW SEASON COLLECTION</p>
+
+        <h1>
+          Discover Your
+          <br />
+          Perfect Style
+        </h1>
+
+        <p>
+          Premium fashion for men, women and kids. Discover the latest trends at
+          amazing prices.
+        </p>
+
+        <a href="products.html" class="btn"> Shop Now → </a>
+      </div>
+    </section>
+
+    <!-- CATEGORIES -->
+
+    <section class="section">
+      <div class="section-title">
+        <h2>Shop By Category</h2>
+        <p>Find your perfect style</p>
+      </div>
+
+      <div class="category-grid">
+        <a href="products.html?category=Men" class="category-card men">
+          <div>
+            <h3>Men</h3>
+            <p>Explore Collection →</p>
+          </div>
+        </a>
+
+        <a href="products.html?category=Women" class="category-card women">
+          <div>
+            <h3>Women</h3>
+            <p>Explore Collection →</p>
+          </div>
+        </a>
+
+        <a href="products.html?category=Kids" class="category-card kids">
+          <div>
+            <h3>Kids</h3>
+            <p>Explore Collection →</p>
+          </div>
+        </a>
+      </div>
+    </section>
+
+    <!-- FEATURED PRODUCTS -->
+
+    <section class="section">
+      <div class="section-title-row">
+        <div>
+          <h2>Featured Products</h2>
+          <p>Our most popular styles</p>
+        </div>
+
+        <a href="products.html" class="view-all"> View All → </a>
+      </div>
+
+      <div id="featuredProducts" class="product-grid"></div>
+    </section>
+
+    <!-- OFFER -->
+
+    <section class="offer-section">
+      <div>
+        <p>LIMITED TIME OFFER</p>
+
+        <h2>
+          Get up to
+          <strong>50% OFF</strong>
+        </h2>
+
+        <p>Upgrade your wardrobe with our latest collection.</p>
+
+        <a href="products.html?category=Sale" class="btn"> Shop Sale </a>
+      </div>
+    </section>
+
+    <!-- WHY US -->
+
+    <section class="section">
+      <div class="section-title">
+        <h2>Why Shop With Us?</h2>
+      </div>
+
+      <div class="features">
+        <div class="feature">
+          <div class="feature-icon">🚚</div>
+          <h3>Free Delivery</h3>
+          <p>Free delivery on orders above ₹999.</p>
+        </div>
+
+        <div class="feature">
+          <div class="feature-icon">↩️</div>
+          <h3>Easy Returns</h3>
+          <p>7-day easy return policy.</p>
+        </div>
+
+        <div class="feature">
+          <div class="feature-icon">🔒</div>
+          <h3>Secure Payment</h3>
+          <p>100% secure payment options.</p>
+        </div>
+
+        <div class="feature">
+          <div class="feature-icon">⭐</div>
+          <h3>Premium Quality</h3>
+          <p>Quality products at great prices.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- NEWSLETTER -->
+
+    <section class="newsletter">
+      <h2>Stay In Style</h2>
+
+      <p>Subscribe to get exclusive offers and new arrivals.</p>
+
+      <div class="newsletter-form">
+        <input type="email" placeholder="Enter your email" />
+
+        <button>Subscribe</button>
+      </div>
+    </section>
+
+    <!-- FOOTER -->
+
+    <footer>
+      <div class="footer-container">
+        <div class="footer-column">
+          <h2 class="footer-logo">Shop<span>Cart</span></h2>
+
+          <p>Your destination for modern, affordable fashion.</p>
+
+          <div class="social">
+            <span>Facebook</span>
+            <span>Instagram</span>
+            <span>Twitter</span>
+          </div>
+        </div>
+
+        <div class="footer-column">
+          <h3>Shop</h3>
+
+          <a href="products.html?category=Men">Men</a>
+          <a href="products.html?category=Women">Women</a>
+          <a href="products.html?category=Kids">Kids</a>
+          <a href="products.html">New Arrivals</a>
+        </div>
+
+        <div class="footer-column">
+          <h3>Help</h3>
+
+          <a href="#">Contact Us</a>
+          <a href="#">Shipping</a>
+          <a href="#">Returns</a>
+          <a href="#">FAQ</a>
+        </div>
+
+        <div class="footer-column">
+          <h3>Contact</h3>
+
+          <p>📍 Maharashtra, India</p>
+          <p>📧 support@shopcart.com</p>
+          <p>📞 +91 98765 43210</p>
+        </div>
+      </div>
+
+      <div class="copyright">© 2026 ShopCart. All Rights Reserved.</div>
+    </footer>
+
+    <script src="js/products.js"></script>
+    <script src="js/app.js"></script>
+  </body>
+</html>

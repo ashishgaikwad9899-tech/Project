@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+
+    <title>ShopCart - Wishlist</title>
+
+    <link
+        rel="stylesheet"
+        href="css/style.css"
+    >
+
+</head>
+
+<body>
+
+<header class="header">
+
+    <div class="logo">
+
+        <a href="index.html">
+            Shop<span>Cart</span>
+        </a>
+
+    </div>
+
+    <nav class="navbar">
+
+        <a href="index.html">Home</a>
+        <a href="products.html?category=Men">Men</a>
+        <a href="products.html?category=Women">Women</a>
+        <a href="products.html?category=Kids">Kids</a>
+
+    </nav>
+
+    <div class="header-actions">
+
+        <a href="wishlist.html" class="header-icon">
+            ❤️
+            <span id="wishlistCount" class="count">0</span>
+        </a>
+
+        <a href="cart.html" class="header-icon">
+            🛒
+            <span id="cartCount" class="count">0</span>
+        </a>
+
+    </div>
+
+</header>
+
+
+<section class="page-header">
+
+    <h1>My Wishlist</h1>
+
+    <p>
+        Products you saved for later
+    </p>
+
+</section>
+
+
+<section class="section">
+
+    <div
+        id="wishlistContainer"
+        class="product-grid"
+    ></div>
+
+</section>
+
+
+<script src="js/products.js"></script>
+<script src="js/app.js"></script>
+
+</body>
+</html>
