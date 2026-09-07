@@ -28,14 +28,15 @@ A modern and responsive **E-Commerce Website** built using **HTML, CSS, and Java
 ## 📂 Project Structure
 
 ```text
-E-Commerce-Website/
-│
-├── index.html
-├── style.css
-├── script.js
-├── images/
-│   └── products/
-└── README.md
+shopcart/
+ |
+ project/
+ ├── index.html
+ ├── style.css
+ ├── script.js
+ ├── images/
+ │   └── products/
+ └── README.md
 ```
 
 ## 💻 How to Run
